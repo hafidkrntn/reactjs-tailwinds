@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import './styles/landingpage.css'
+import Intro from './components/Intro'
+import Navbar from './components/Navbar'
+import Fitur from './components/Fitur'
+import Paketharga from './components/Paketharga';
+import Order from './components/Order';
+import Footer from './components/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="myBG">
+      <Intro />
+      </div>
+      <div>
+      <Navbar />
+      <Fitur />
+      <Paketharga />
+      <Order />
+      <Footer />
+      </div>   
     </div>
-  );
+  )
 }
 
 export default App;
